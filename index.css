@@ -34,6 +34,11 @@ header {
     cursor: pointer;
 }
 
+.grow:hover {
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
 .menu {
     height: 100%;
     width: 100%;
@@ -93,11 +98,6 @@ header {
 
 }
 
-.regroupeEmpty:hover {
-    transition: 0.2s;
-    transform: scale(1.05);
-}
-
 .regroupe.Savoir:hover {
 
     transition: 0.1s;
@@ -141,10 +141,6 @@ header {
 
     /* background-color: var(--color2); */
     align-content: center;
-}
-
-.suppr:hover {
-    transform: scale(1.05);
 }
 
 .suppr span {
