@@ -1,0 +1,155 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* LENGTH */
+    --span_height: 50px;
+    --span_height2: 120px;
+
+    /* COLOR */
+    --black: black;
+    --white: white;
+    --color1: #563232;
+    --color2: #0f5e9c;
+
+    display: flex;
+    align-items: center;
+}
+
+header {
+    width: 80%;
+    height: 40%;
+    background-color: var(--color1);
+    margin-left: 10%;
+    padding: 10px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--color2);
+}
+
+.regroupe,
+.regroupeEmpty {
+
+    height: var(--span_height);
+    width: 20%;
+    padding: 5px;
+
+    flex-direction: column;
+    background-color: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.primaire,
+.secondaire {
+    height: 100%;
+    width: 100%;
+    align-content: center;
+}
+
+.primaire span,
+.secondaire span {
+    height: var(--span_height);
+    width: 100%;
+
+    text-align: center;
+    display: block;
+    align-content: center;
+
+    background-color: var(--white);
+}
+
+
+.secondaire {
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.secondaire:hover {
+    color: var(--white);
+
+    span {
+        background-color: var(--color1);
+    }
+
+}
+
+.regroupeEmpty:hover {
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+.regroupe.Savoir:hover {
+
+    transition: 0.1s;
+    height: var(--span_height2);
+    background-color: var(--color1);
+
+    .primaire {
+        display: none;
+        /* border: 1px solid var(--white); */
+    }
+
+    .secondaire {
+        transition: 0.2s;
+        height: var(--secondaire_height);
+        width: 100%;
+        font-size: var(--secondaire_font_size);
+    }
+}
+
+#cv {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#cv object {
+    height: 90%;
+    width: 100%;
+}
+
+.suppr {
+    height: 6%;
+    width: 10%;
+    margin-left: 45%;
+
+    border: 1px solid var(--color1);
+    border-radius: 10px;
+
+    /* background-color: var(--color2); */
+    align-content: center;
+}
+
+.suppr:hover {
+    transform: scale(1.05);
+}
+
+.suppr span {
+    font-weight: bold;
+    color: var(--color1);
+    text-align: center;
+    display: block;
+}

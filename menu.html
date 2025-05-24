@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Portfolio BERTIN Jolan</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/svg+xml" href="img/logo.png" /> <!-- IMAGE À CHANGER -->
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <section class="menu">
+            <div class="regroupe Savoir">
+                <div class="primaire pointer">
+                    <span>Savoirs</span>
+                </div>
+                <div class="secondaire pointer">
+                    <span>Savoir-être</span>
+                </div>
+                <div class="secondaire pointer">
+                    <span>Savoir-faire</span>
+                </div>
+            </div>
+            <div class="regroupeEmpty">
+                <div class="primaire pointer">
+                    <span>Compétences</span>
+                </div>
+            </div>
+            <div class="regroupe" id="Projet">
+                <div class="primaire pointer" id="projet" onmouseover="retourne()" onclick="deplace()">
+                    <span id="spanProjet">Projets</span>
+                </div>
+            </div>
+            <div class="regroupe">
+                <div class="primaire pointer" onclick="afficheCV()">
+                    <span>CV</span>
+                </div>
+            </div>
+        </section>
+
+        <div id="cv">
+            <object data="CV.pdf"></object>
+
+            <div class="suppr pointer" onclick="cacheCV()">
+                <span>Retour</span>
+            </div>
+        </div>
+
+    </header>
+</body>
+
+</html>
