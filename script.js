@@ -14,9 +14,9 @@ function deplace() {
         spanProjet.style.color = "var(--black)"
         window.location.href = "projets.html"
     }
-    else {
+    else if (document.getElementById("projet").style.marginTop != "180px") {
         projet.style.transition = "0.5s"
-        projet.style.marginTop = "180px"
+        projet.style.marginTop = "32vh"
         projet.style.transform = "none"
 
         spanProjet.style.transition = "transform 0.5s"
@@ -27,7 +27,7 @@ function deplace() {
 }
 
 function retourne() {
-    if (document.getElementById("projet").style.marginTop == "180px") {
+    if (document.getElementById("projet").style.marginTop == "32vh") {
         spanProjet.style.transform = "rotate(360deg)"
         spanProjet.style.backgroundColor = "var(--color2)"
     }
