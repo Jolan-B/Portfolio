@@ -29,10 +29,9 @@ function cacheCV() {
 
 function deplace() {
 
-    if (document.getElementById("spanProjet").style.backgroundColor == "var(--color2)") {
-        spanProjet.style.backgroundColor = "var(--white)"
-        spanProjet.style.color = "var(--black)"
-        window.location.href = "projets.html"
+    if (document.getElementById("projet").style.marginTop == "32vh") {
+        spanProjet.style.transform = "rotate(360deg)"
+        spanProjet.style.backgroundColor = "var(--color2)"
     }
     else if (document.getElementById("projet").style.marginTop != "180px") {
         projet.style.transition = "0.5s"
@@ -46,10 +45,12 @@ function deplace() {
     }
 }
 
-function retourne() {
-    if (document.getElementById("projet").style.marginTop == "32vh") {
-        spanProjet.style.transform = "rotate(360deg)"
-        spanProjet.style.backgroundColor = "var(--color2)"
+function changePage() {
+
+    if (document.getElementById("spanProjet").style.backgroundColor == "var(--color2)") {
+        spanProjet.style.backgroundColor = "var(--white)"
+        spanProjet.style.color = "var(--black)"
+        window.location.href = "projets.html"
     }
 }
 
