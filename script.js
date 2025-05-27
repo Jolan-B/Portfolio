@@ -1,10 +1,35 @@
 function afficheCV() {
-    cv.style.transition = "1s"
-    cv.style.display = "block"
+    //cv.style.transition = "1s"
+    // cv.style.display = "block"
+    cv.style.height = "100%"
+    cv.style.width = "100%"
+
+    cvPdf.style.height = "90%"
+    cvPdf.style.width = "100%"
+    cvPdf.style.opacity = "1"
+
+    // retourCV.style.display = "block"
+    retourCV.style.height = "6%"
+    retourCV.style.width = "10%"
+    retourCV.style.border = "1px solid var(--color1)"
+
+    spanRetourCV.style.fontSize = "10px"
+    spanRetourCV.style.transitionDelay = "1s"
 }
 
 function cacheCV() {
-    cv.style.display = "none"
+    // cv.style.display = "none"
+    cv.style.height = "0%"
+    cv.style.width = "0%"
+
+    //retourCV.style.display = "none"
+    retourCV.style.height = "0%"
+    retourCV.style.width = "0%"
+    retourCV.style.border = "none"
+
+    spanRetourCV.style.fontSize = "0"
+    spanRetourCV.style.transitionDelay = "0s"
+
 }
 
 function deplace() {
@@ -32,3 +57,22 @@ function retourne() {
         spanProjet.style.backgroundColor = "var(--color2)"
     }
 }
+
+// function entrer(lieu, event) {
+//     const scene = document.getElementById("grandeScene"); //la c'est l'image que tu as de base en fond
+//     const bg = document.getElementById("cv");
+
+//     const x = event.clientX;  //c'est pour faire le zoom sur l'endroit ou tu clique
+//     const y = event.clientY;
+
+//     const xPercent = (x / window.innerWidth) * 100;
+//     const yPercent = (y / window.innerHeight) * 100;
+
+//     scene.style.transformOrigin = { xPercent }; { yPercent };
+
+//     scene.classList.add("zoom");
+//     scene.classList.remove("no-zoom");
+
+//     scene.classList.remove("zoom");
+//     scene.classList.add("no-zoom");
+// }

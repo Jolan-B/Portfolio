@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="regroupe" id="Projet">
-                <div class="primaire pointer grow" id="projet" onmouseover="retourne()" onclick="deplace()">
+                <div class="primaire pointer grow" id="projet" onclick="retourne()" onmouseover="deplace()">
                     <span id="spanProjet">Projets</span>
                 </div>
             </div>
@@ -43,10 +43,10 @@
         </section>
 
         <div id="cv">
-            <object data="CV.pdf"></object>
+            <object id="cvPdf" data="CV.pdf?#zoom=75"></object>
 
-            <div class="suppr pointer grow" onclick="cacheCV()">
-                <span>Retour</span>
+            <div id="retourCV" class="suppr pointer grow" onclick="cacheCV()">
+                <span id="spanRetourCV">Retour</span>
             </div>
         </div>
 
