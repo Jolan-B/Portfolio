@@ -1,6 +1,4 @@
 function afficheCV() {
-    //cv.style.transition = "1s"
-    // cv.style.display = "block"
     cv.style.height = "100%"
     cv.style.width = "100%"
 
@@ -8,21 +6,18 @@ function afficheCV() {
     cvPdf.style.width = "100%"
     cvPdf.style.opacity = "1"
 
-    // retourCV.style.display = "block"
     retourCV.style.height = "6%"
     retourCV.style.width = "10%"
     retourCV.style.border = "1px solid var(--color1)"
 
-    spanRetourCV.style.fontSize = "10px"
+    spanRetourCV.style.fontSize = "16px"
     spanRetourCV.style.transitionDelay = "1s"
 }
 
 function cacheCV() {
-    // cv.style.display = "none"
     cv.style.height = "0%"
     cv.style.width = "0%"
 
-    //retourCV.style.display = "none"
     retourCV.style.height = "0%"
     retourCV.style.width = "0%"
     retourCV.style.border = "none"
