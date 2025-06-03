@@ -16,18 +16,16 @@ body {
     --black: black;
     --white: white;
     --color1: #563232;
-    --color2: #0f5e9c;
+    --color2: #a1c539;
+    /*BCD3F2*/
+    --color3: #CBCBD4;
+
+    /*BORDER RADIUS*/
+    --radius: 20px;
+    --radius2: 13px;
 
     display: flex;
     align-items: center;
-}
-
-header {
-    width: 80%;
-    height: 40%;
-    background-color: var(--color1);
-    margin-left: 10%;
-    padding: 10px;
 }
 
 .pointer {
@@ -39,19 +37,44 @@ header {
     transform: scale(1.05);
 }
 
+.hidden {
+    overflow: hidden;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+/* PAGE ACCUEIL */
+
+.bodyMenu {
+    background-image: url(image/foret.jpg);
+    background-size: cover;
+}
+
+header {
+    width: 80%;
+    height: 40%;
+    border: solid 5px var(--color1);
+    border-radius: var(--radius);
+    margin-left: 10%;
+}
+
 .menu {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: var(--color2);
+    background: linear-gradient(90deg, var(--color1), var(--color2));
+    border-radius: var(--radius2);
 }
 
 .regroupe {
 
     height: var(--span_height);
     width: 20%;
+    max-width: 180px;
     padding: 5px;
 
     flex-direction: column;
@@ -155,7 +178,6 @@ header {
     border: none;
     border-radius: 10px;
 
-    /* background-color: var(--color2); */
     align-content: center;
     transition-delay: 1s;
 
@@ -170,3 +192,46 @@ header {
     text-align: center;
     display: block;
 }
+
+/* PAGE ACCUEIL */
+
+/* PAGE PROJETS */
+
+.pageProjet {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.projet {
+    display: flex;
+    justify-content: space-between;
+    height: 60%;
+    width: 80%;
+    margin-top: 10vh;
+    margin-left: 10%;
+}
+
+.projet>img {
+    height: 100%;
+    width: 15%;
+    object-fit: cover;
+}
+
+.projet>img:hover {
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+.menuProjet {
+    padding-top: 10vh;
+    align-self: center;
+}
+
+.menuProjet>img {
+    height: 30px;
+    width: 30px;
+}
+
+/* PAGE PROJETS */

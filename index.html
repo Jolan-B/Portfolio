@@ -10,34 +10,36 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 
-<body>
+<body class="bodyMenu">
+
+    <!-- <iframe src="file:///C:/Users/Public/BUT_Info/Github/Portfolio/index.html"></iframe> -->
 
     <header>
         <section class="menu">
             <div class="regroupe Savoir">
                 <div class="primaire pointer">
-                    <span>Savoirs</span>
+                    <span class="hidden">Savoirs</span>
                 </div>
                 <div class="secondaire pointer">
-                    <span>Savoir-être</span>
+                    <span class="hidden">Savoir-être</span>
                 </div>
                 <div class="secondaire pointer">
-                    <span>Savoir-faire</span>
+                    <span class="hidden">Savoir-faire</span>
                 </div>
             </div>
             <div class="regroupe Competence">
                 <div class="primaire competence pointer grow">
-                    <span>Compétences</span>
+                    <span class="hidden">Compétences</span>
                 </div>
             </div>
             <div class="regroupe" id="Projet">
-                <div class="primaire pointer grow" id="projet" onclick="changePage()" onmouseover="deplace()">
-                    <span id="spanProjet">Projets</span>
+                <div class="primaire pointer grow" id="projet" onclick="changePage(this)" onmouseenter="deplace(this)">
+                    <span id="spanProjet" class="hidden">Projets</span>
                 </div>
             </div>
             <div class="regroupe">
                 <div class="primaire pointer grow" onclick="afficheCV()">
-                    <span>CV</span>
+                    <span class="hidden">CV</span>
                 </div>
             </div>
         </section>
@@ -45,7 +47,7 @@
         <div id="cv">
             <object id="cvPdf" data="CV.pdf?#zoom=75"></object>
 
-            <div id="retourCV" class="suppr pointer" onclick="cacheCV()">
+            <div id="retourCV" class="suppr pointer" onclick="cacheCV(this)">
                 <span id="spanRetourCV">Retour</span>
             </div>
         </div>
