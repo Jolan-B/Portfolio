@@ -20,7 +20,7 @@ function afficheCV() {
 
     retourCV.style.height = "6%"
     retourCV.style.width = "10%"
-    retourCV.style.border = "1px solid var(--color1)"
+    retourCV.style.border = "1px solid var(--white)"
 
     spanRetourCV.style.fontSize = "16px"
     spanRetourCV.style.transitionDelay = "1s"
@@ -49,7 +49,7 @@ function deplace(e) {
         const spanProjet = document.getElementById("spanProjet");
 
         spanProjet.style.transform = "rotate(360deg)"
-        spanProjet.style.backgroundColor = "var(--color2)"
+        spanProjet.style.backgroundColor = "var(--green)"
         spanProjet.style.color = "var(--black)"
     }
 }
@@ -66,11 +66,11 @@ function changePage(e) {
 
             spanProjet.style.transition = "transform 0.5s"
             spanProjet.style.transform = "rotate(180deg)"
-            spanProjet.style.backgroundColor = "var(--color1)"
+            spanProjet.style.backgroundColor = "var(--brown)"
             spanProjet.style.color = "var(--white)"
         }
     }
-    else if (spanProjet.style.backgroundColor == "var(--color2)") {
+    else if (spanProjet.style.backgroundColor == "var(--green)") {
         spanProjet.style.backgroundColor = "var(--white)"
         window.location.href = "projets.html"
     }
