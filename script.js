@@ -2,6 +2,10 @@ function accueil() {
     window.location.href = 'index.html'
 }
 
+function page(e) {
+    window.location.href = e
+}
+
 // PAGE ACCUEIL
 
 function afficheCV() {
@@ -49,8 +53,8 @@ function deplace(e) {
         const spanProjet = document.getElementById("spanProjet");
 
         spanProjet.style.transform = "rotate(360deg)"
-        spanProjet.style.backgroundColor = "var(--green)"
-        spanProjet.style.color = "var(--black)"
+        spanProjet.style.backgroundColor = "var(--brown)"
+        spanProjet.style.color = "var(--white)"
     }
 }
 
@@ -66,12 +70,12 @@ function changePage(e) {
 
             spanProjet.style.transition = "transform 0.5s"
             spanProjet.style.transform = "rotate(180deg)"
-            spanProjet.style.backgroundColor = "var(--brown)"
-            spanProjet.style.color = "var(--white)"
+            spanProjet.style.backgroundColor = "var(--white)"
+            spanProjet.style.color = "var(--black)"
         }
     }
-    else if (spanProjet.style.backgroundColor == "var(--green)") {
-        spanProjet.style.backgroundColor = "var(--white)"
+    else if (spanProjet.style.backgroundColor == "var(--brown)") {
+        // spanProjet.style.backgroundColor = "var(--white)"
         window.location.href = "projets.html"
     }
 }

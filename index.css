@@ -29,8 +29,8 @@ body {
 
     display: flex;
     align-items: center;
-    background-color: var(--grey1);
-    background: linear-gradient(180deg, var(--grey1), var(--grey2));
+    /* background-color: var(--grey1);
+    background: linear-gradient(180deg, var(--grey1), var(--grey2)); */
 }
 
 .pointer {
@@ -53,7 +53,12 @@ body {
 /* PAGE ACCUEIL */
 
 .bodyMenu {
-    background: linear-gradient(180deg, var(--grey1), var(--grey2));
+    background-image: url(image/fond2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* background: linear-gradient(180deg, var(--grey1), var(--grey2)); */
 }
 
 header {
@@ -70,7 +75,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background: linear-gradient(90deg, var(--brown), var(--green));
+    /* background: linear-gradient(90deg, var(--brown), var(--green)); */
     border-radius: var(--radius2);
 }
 
@@ -105,7 +110,8 @@ header {
     display: block;
     align-content: center;
 
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--brown);
 }
 
 
@@ -113,13 +119,15 @@ header {
     width: 0;
     height: 0;
     font-size: 0;
+    color: var(--white);
 }
 
 .secondaire:hover {
-    color: var(--white);
 
     span {
-        background-color: var(--brown);
+        transition: 0.2s;
+        color: var(--black);
+        background-color: var(--white);
     }
 
 }
@@ -230,13 +238,23 @@ header {
 }
 
 .menuProjet {
-    padding-top: 10vh;
+    padding-top: 8vh;
     align-self: center;
 }
 
 .menuProjet>img {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
 }
 
 /* PAGE PROJETS */
+
+/* PAGE PROJETS CROCHET */
+
+iframe {
+    height: 80%;
+    width: 80%;
+    background-color: var(--white);
+}
+
+/* PAGE PROJETS CROCHET */
