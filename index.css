@@ -421,6 +421,10 @@ iframe {
 .block {
     height: 250px;
     width: 250px;
+    max-width: (100%-40px);
+    max-width: 100%;
+
+    transition: 0.5s;
 }
 
 .block:nth-child(3n+1) {

@@ -85,3 +85,20 @@ function changePageProjet(e) {
 }
 
 // PAGE ACCUEIL
+
+// PAGE SAVOIR FAIRE 
+
+function zoom(e) {
+
+    if (e.style.width == "100%") {
+        e.style.width = "250px"
+        e.style.height = "250px"
+    }
+    else {
+        e.style.width = "100%"
+        e.style.height = "100%"
+    }
+}
+
+
+// PAGE SAVOIR FAIRE 
