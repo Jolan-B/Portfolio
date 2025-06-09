@@ -267,7 +267,7 @@ header {
 
 /* PAGE PROJETS */
 
-.pageProjet {
+.pageProjets {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -340,7 +340,7 @@ iframe {
     background-color: var(--white);
 }
 
-#pageCrochet {
+.pageProjet {
     padding-top: 75px;
     /* background-color: red; */
     width: 100%;
@@ -424,7 +424,8 @@ iframe {
     max-width: (100%-40px);
     max-width: 100%;
 
-    transition: 0.5s;
+    transition: height 0.5s,
+        width 0.5s;
 }
 
 .block:nth-child(3n+1) {

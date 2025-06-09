@@ -103,8 +103,6 @@ function zoom(e) {
 
 function opaque(e) {
 
-    console.log("opaque")
-
     if (e.style.width != "100%") {
         e.style.opacity = "0.8"
     }
