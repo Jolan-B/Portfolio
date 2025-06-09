@@ -359,6 +359,7 @@ iframe {
 
     span {
         width: calc(45vw - 20px);
+        color: var(--white);
     }
 }
 
