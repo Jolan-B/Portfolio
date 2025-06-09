@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | Portfolio BERTIN Jolan</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/svg+xml" href="img/logo.png" /> <!-- IMAGE À CHANGER -->
+    <link rel="icon" type="image/svg+xml" href="image/icon2.png" /> <!-- IMAGE À CHANGER -->
     <script type="text/javascript" src="script.js"></script>
 </head>
 
@@ -20,26 +20,27 @@
                 <div class="primaire pointer">
                     <span class="hidden">Savoirs</span>
                 </div>
-                <div class="secondaire pointer">
+                <div class="secondaire pointer" onclick="page('savoir_etre.html')">
                     <span class="hidden">Savoir-être</span>
                 </div>
-                <div class="secondaire pointer">
+                <div class="secondaire pointer" onclick="page('savoir_faire.html')">
                     <span class="hidden">Savoir-faire</span>
                 </div>
             </div>
-            <div class="regroupe Competence">
-                <div class="divcompetence primaire pointer grow">
+            <!-- <div class="regroupe Competence">
+                <div class="primaire pointer grow">
                     <span class="competence hidden">Compétences</span>
                 </div>
-            </div>
+            </div> -->
             <div class="regroupe" id="Projet">
-                <div class="primaire pointer grow" id="projet" onclick="changePage(this)" onmouseenter="deplace(this)">
+                <div class="primaire pointer grow" id="projet" onclick="changePageProjet(this)"
+                    onmouseenter="deplace(this)">
                     <span id="spanProjet" class="hidden">Projets</span>
                 </div>
             </div>
-            <div class="regroupe">
+            <div class="regroupe CV">
                 <div class="primaire pointer grow" onclick="afficheCV()">
-                    <span class="hidden">CV</span>
+                    <span class="cv hidden">CV</span>
                 </div>
             </div>
         </section>
@@ -51,6 +52,10 @@
                 <span id="spanRetourCV">Retour</span>
             </div>
         </div>
+
+        <!-- <div class="divIcon">
+            <span class="icon">JB</span>
+        </div> -->
 
     </header>
 </body>

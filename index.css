@@ -16,7 +16,9 @@ body {
     --black: black;
     --white: white;
     --brown: #563232;
-    --green: #a1c539;
+    --green: #59813d;
+    --green2: #a1c539;
+    --green3: #85aa5c;
     --grey1: #bfbfbf;
     --grey2: #808080;
 
@@ -153,7 +155,7 @@ header {
 
 }
 
-.competence {
+.cv {
 
     clip-path: polygon(0 0,
             50% 0,
@@ -168,10 +170,10 @@ header {
     transition: clip-path 0.5s;
 }
 
-.Competence:hover {
+.CV:hover {
 
 
-    .competence {
+    .cv {
 
         /* OCTOGONE */
 
@@ -251,6 +253,16 @@ header {
     display: block;
 }
 
+/* .divIcon {
+    margin-top: 80px;
+    margin-left: 300px;
+}
+
+.icon {
+    font-weight: bold;
+    color: var(--brown);
+} */
+
 /* PAGE ACCUEIL */
 
 /* PAGE PROJETS */
@@ -290,7 +302,7 @@ header {
 
 /* PAGE PROJETS */
 
-/* PAGE PROJETS CROCHET */
+/* PAGE PROJET INDIVIDUEL */
 
 .bodyProjet {
     height: 100%;
@@ -363,5 +375,70 @@ iframe {
     }
 }
 
+/* PAGE PROJET INDIVIDUEL */
 
-/* PAGE PROJETS CROCHET */
+/* PAGE SAVOIR-FAIRE */
+
+
+.bodySavoirFaire {
+    background-color: var(--brown);
+    flex-direction: column;
+}
+
+.boutonsSavoirFaire {
+    padding-bottom: 8px;
+    padding-top: 5px;
+    width: 100%;
+    height: 35px;
+
+    background-color: var(--brown);
+
+    display: flex;
+    justify-content: space-evenly;
+
+    position: fixed;
+
+}
+
+.liste {
+
+    height: max-content;
+    width: calc(100%-40px);
+
+
+    /* TOP, RIGHT, BOTTOM, LEFT */
+    margin: 60px 30px 0 30px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    gap: 35px;
+
+}
+
+.block {
+    height: 250px;
+    width: 250px;
+}
+
+.block:nth-child(3n+1) {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.block:nth-child(3n+2) {
+    background-color: var(--green2);
+}
+
+.block:nth-child(3n) {
+    background-color: var(--green3);
+}
+
+.block:last-child {
+    margin-bottom: 50px;
+}
+
+
+/* PAGE SAVOIR-FAIRE */

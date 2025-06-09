@@ -2,6 +2,10 @@ function accueil() {
     window.location.href = 'index.html'
 }
 
+function projet() {
+    window.location.href = 'projets.html'
+}
+
 function page(e) {
     window.location.href = e
 }
@@ -58,7 +62,7 @@ function deplace(e) {
     }
 }
 
-function changePage(e) {
+function changePageProjet(e) {
 
     const spanProjet = document.getElementById("spanProjet");
 
