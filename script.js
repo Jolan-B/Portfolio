@@ -97,8 +97,25 @@ function zoom(e) {
     else {
         e.style.width = "100%"
         e.style.height = "100%"
+        e.style.opacity = "1"
     }
 }
 
+function opaque(e) {
+
+    console.log("opaque")
+
+    if (e.style.width != "100%") {
+        e.style.opacity = "0.8"
+    }
+    else {
+        e.style.opacity = "1"
+    }
+
+}
+
+function clair(e) {
+    e.style.opacity = "1"
+}
 
 // PAGE SAVOIR FAIRE 
