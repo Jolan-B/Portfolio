@@ -400,6 +400,25 @@ iframe {
 
 }
 
+.competences {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.competences p {
+    background-color: var(--grey1);
+
+    width: 45%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
 .liste {
 
     height: max-content;
@@ -445,5 +464,16 @@ iframe {
     margin-bottom: 50px;
 }
 
+.block>p {
+    height: 40px;
+
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.illustrationSavoirFaire {
+    width: 100%;
+}
 
 /* PAGE SAVOIR-FAIRE */
