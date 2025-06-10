@@ -93,13 +93,15 @@ function zoom(e) {
     if (e.style.width == "100%") {
         e.style.width = "250px"
         e.style.height = "250px"
-        e.style.overflow = "hidden"
+        e.style.overflowY = "hidden"
+        e.getElementsByClassName("illustrationSavoirFaire")[0].style.height = "170px"
     }
     else {
         e.style.width = "100%"
         e.style.height = "100%"
         e.style.opacity = "1"
-        e.style.overflow = "auto"
+        e.style.overflowY = "auto"
+        e.getElementsByClassName("illustrationSavoirFaire")[0].style.height = "auto"
     }
 }
 

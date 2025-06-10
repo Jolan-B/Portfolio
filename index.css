@@ -442,6 +442,7 @@ iframe {
     width: 250px;
     max-width: (100%-40px);
     max-width: 100%;
+    overflow-x: hidden;
 
     transition: height 0.5s,
         width 0.5s;
@@ -464,8 +465,10 @@ iframe {
     margin-bottom: 50px;
 }
 
-.block>p {
+.titre {
     height: 40px;
+    margin-left: 3%;
+    margin-right: 3%;
 
     align-content: center;
     text-align: center;
@@ -473,7 +476,20 @@ iframe {
 }
 
 .illustrationSavoirFaire {
-    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 92%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.text {
+    background-color: red;
+
+    margin: 20px 3% 20px 3%;
+
+    width: 94%;
+    text-align: start;
 }
 
 /* PAGE SAVOIR-FAIRE */
