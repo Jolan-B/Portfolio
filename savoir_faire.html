@@ -169,13 +169,67 @@
         <div class="block pointer hidden" onmouseover="opaque(this)" onmouseleave="clair(this)" onclick="zoom(this)">
             <p class="titre">Filtrer une base de données (MySQL) depuis un site web</p>
             <img class="illustrationSavoirFaire" src="image/competence/filtre_bdd.png" />
-            <p>Bla Bla Bla Bla Bla</p>
+            <p>Sur cette figure, on distingue deux parties. Celle de gauche montre du code, tandis que celle de droite
+                montre le site résultant de ce projet. Ce projet a pour objectif d'utiliser un framework (ici
+                <b>Flask</b>)
+                afin de lier une base de données à une interface web. Ce site peut être comparé à un catalogue simplifié
+                de voitures.
+            </p>
+            <p>Sur la partie droite, on observe un filtre avec plusieurs possibilités de recherche : par nom de modèle,
+                par catégorie et par prix. Dans l'exemple, les sections nom et catégorie sont utilisées (avec
+                <i>Porsche</i> et <i>Break</i>) et le prix n'est pas renseigné. Une fois le bouton <b>Filtrer</b>
+                cliqué,
+                la ou les voiture(s) correspondant aux filtres sont affichées (ici un break Porsche).
+            </p>
+
+            <p>Pour créer une requête vers la base de données (ici <b>MySQL</b>) et permettre d'afficher le ou les
+                modèle(s) correspondant aux critères, il faut d'abord sélectionner toutes les voitures présentes dans la
+                base
+                de données (<i>lignes 564 à 573</i>), puis filtrer uniquement celles qui correspondent aux attentes
+                (<i>lignes 575 à 587</i>). Il faut également vérifier que les champs du filtre sont bien renseignés pour
+                pouvoir
+                les utiliser comme sélecteurs (leurs valeurs par défaut étant vides, si un champ de filtre n'est pas
+                renseigné,
+                aucun véhicule ne sera sélectionné). La requête est ensuite envoyée, les véhicules correspondants sont
+                retournés,
+                et leurs informations peuvent alors être utilisées pour être affichées.
+            </p>
+
+            <p>La figure témoigne donc de l'utilisation d'un filtre sur un site web afin d'accéder à des informations
+                présentes dans une base de données associée.</p>
+
         </div>
 
         <div class="block pointer hidden" onmouseover="opaque(this)" onmouseleave="clair(this)" onclick="zoom(this)">
             <p class="titre">Utiliser des cookies sur un site web</p>
             <img class="illustrationSavoirFaire" src="image/competence/cookies.png" />
-            <p>Bla Bla Bla Bla Bla</p>
+            <p>Sur cette figure, on distingue deux parties. Celle de gauche montre du code, tandis que celle de droite
+                montre le site résultant de ce projet. Ce projet a pour objectif d'utiliser un framework (ici
+                <b>Flask</b>)
+                afin de lier une base de données à une interface web. Ce site peut être comparé à un catalogue simplifié
+                de voitures.
+            </p>
+            <p>Sur la partie de droite, on distingue un filtre avec deux champs déjà présélectionnés (le modèle avec
+                <i>Clio 3</i> et le prix maximal avec <i>10 000€</i>). Lorsque l'utilisateur reviendra sur cette page,
+                ces informations seront retenues à l'aide de <b>cookies</b>.
+            </p>
+
+            <p>Leur gestion et leur utilisation sont visibles dans le code (partie de gauche). Tout d'abord, lors de la
+                saisie
+                des informations dans le filtre par l'utilisateur, celles-ci sont enregistrées dans des variables
+                (<i>lignes 534 à 541</i>). Ensuite, ces variables sont affectées à une <b>session</b> (c'est elle qui
+                fait office de cookie et garde les informations relatives à la saisie de l'utilisateur) aux
+                <i>lignes 541 à 555</i>. Ensuite, puisqu'il s'agit d'un filtre, une requête est effectuée vers la base
+                de données afin de sélectionner les véhicules demandés.
+            </p>
+
+            <p>L'utilisation de sessions permet donc de conserver des informations (ici, celles relatives au filtre).
+                Ainsi, lorsque l'utilisateur change de page ou revient (dans un délai de temps raisonnable),
+                ses dernières données saisies seront sauvegardées et il reprendra l'utilisation du site dans le même
+                état
+                où il l'a laissée.
+            </p>
+
         </div>
 
         <div class="block pointer hidden" onmouseover="opaque(this)" onmouseleave="clair(this)" onclick="zoom(this)">
