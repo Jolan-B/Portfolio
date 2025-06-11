@@ -483,13 +483,18 @@ iframe {
     object-fit: cover;
 }
 
-.text {
-    background-color: red;
+.block p:not(.titre) {
+
+    text-indent: 2em;
 
     margin: 20px 3% 20px 3%;
 
     width: 94%;
     text-align: start;
+}
+
+.motLien {
+    color: var(--brown);
 }
 
 /* PAGE SAVOIR-FAIRE */

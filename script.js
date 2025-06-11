@@ -98,7 +98,7 @@ function zoom(e) {
     }
     else {
         e.style.width = "100%"
-        e.style.height = "100%"
+        e.style.height = "40%"
         e.style.opacity = "1"
         e.style.overflowY = "auto"
         e.getElementsByClassName("illustrationSavoirFaire")[0].style.height = "auto"
