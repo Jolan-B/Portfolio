@@ -19,16 +19,69 @@
 
     <section class="pageProjet">
 
-        <span>PRESENTATION DU PROJET</span>
+        <span><b>Jeu du Quixo</b></span>
 
         <div class="image_txt">
             <img src="image/quixo.jpg" />
-            <span>
-                BLA BLA SUR LE PROJET
-            </span>
+            <div class="txtProjet">
+                <span>
+                    Ce projet étudiant de groupe a pour objectif de programmer le jeu <b>Quixo</b> en modèle <b>MVC</b>
+                    (modèle qui
+                    partitionne le <i>Modèle</i>, la <i>Vue</i> et le <i>Contrôle</i> du jeu) en <b>Java</b>. Le Quixo
+                    est un jeu en 1 contre 1 sur un plateau de 5x5 où 25 cubes sont posés sur la face <i>Neutre</i>. Les
+                    joueurs ont une marque différente, l’un a les <i>X</i> et l’autre les <i>O</i>. Les joueurs
+                    jouent chacun leur tour et l’objectif est d’aligner 5 cubes de sa face avant l’autre. Lors d’un
+                    tour, le joueur choisit un cube en périphérie du plateau possédant la marque <i>Neutre</i> ou la
+                    sienne. Une fois sélectionné, il enlève le cube, ce qui crée un trou qu’il doit reboucher en le
+                    posant
+                    à un autre endroit en périphérie et en poussant les autres cubes. Si les deux joueurs alignent,
+                    suite au même coup, 5 de leurs faces respectives, c’est le joueur qui a joué le coup qui perd.
+                </span>
+            </div>
         </div>
 
-        <span>CONCLUSION DU PROJET</span>
+        <div class="image_txt">
+            <img src="image/projet/quixo1.png" />
+            <div class="txtProjet">
+                <span>
+                    Lorsque le jeu est lancé, le joueur choisit son mode (<i>Joueur vs Joueur</i>, <i>Joueur vs
+                        Ordinateur</i> ou <i>Ordinateur vs Ordinateur</i>).
+                    Nous avons implémenté deux ordinateurs de difficultés différentes qu’il est possible d’affronter. Si
+                    au moins un joueur est présent, il inscrit son nom et le jeu démarre.
+                </span>
+            </div>
+        </div>
+
+        <div class="image_txt">
+            <img src="image/projet/quixo2.png" />
+            <div class="txtProjet">
+                <span>
+                    Comme dit précédemment, la première phase de jeu demande au joueur de sélectionner un cube en
+                    périphérie valable (de sa marque ou sans marque). Ensuite, le jeu affiche les coordonnées jouables
+                    pour la seconde phase en les surlignant en vert (comme illustré sur l’image). Une fois qu’une case
+                    valable est choisie, le jeu est mis à jour et c’est au tour du joueur suivant.
+                </span>
+            </div>
+        </div>
+
+        <div class="image_txt">
+            <img src="image/projet/quixo3.png" />
+            <div class="txtProjet">
+                <span>
+                    Lorsqu’un des joueurs a aligné 5 dés de sa marque, le jeu s’arrête et désigne le vainqueur. Une
+                    deuxième partie est en cours de développement avec pour objectif de faire fonctionner ce jeu non pas
+                    dans un terminal avec des saisies clavier, mais avec une fenêtre graphique et des clics en guise
+                    de commandes.
+                </span>
+            </div>
+        </div>
+
+        <span class="conclusionProjet">Ce projet m’a permis d’utiliser le modèle MVC, une nouvelle façon de programmer
+            afin de coder ce jeu. De plus, de nombreux tests via JUnit ont été réalisés afin de vérifier le bon
+            fonctionnement attendu du programme.</span>
+
+    </section>
+
 
     </section>
 

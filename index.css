@@ -364,15 +364,35 @@ iframe {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     img {
         height: 30vw;
     }
+}
 
-    span {
-        width: calc(45vw - 20px);
-        color: var(--white);
-    }
+.image_txt:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.txtProjet {
+    width: calc(45vw - 20px);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+.txtProjet span {
+    line-height: 1.3;
+    text-indent: 2em;
+}
+
+.conclusionProjet {
+    font-weight: bold;
+    width: 70%;
+    padding-top: 40px;
+    padding-bottom: 55px;
+    text-align: center;
 }
 
 /* PAGE PROJET INDIVIDUEL */
