@@ -355,6 +355,17 @@ iframe {
     align-items: center;
 }
 
+.siteAbreuvetoa {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.codeAbreuvetoa {
+    font-size: 14px;
+}
+
 .image_txt {
 
     width: calc(100% - 100px);
