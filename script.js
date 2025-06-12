@@ -95,6 +95,7 @@ function zoom(e) {
         e.style.height = "250px"
         e.style.overflowY = "hidden"
         e.getElementsByClassName("illustrationSavoirFaire")[0].style.height = "170px"
+        e.getElementsByClassName("txtSavoirFaire")[0].style.fontSize = "0";
     }
     else {
         e.style.width = "100%"
@@ -102,6 +103,7 @@ function zoom(e) {
         e.style.opacity = "1"
         e.style.overflowY = "auto"
         e.getElementsByClassName("illustrationSavoirFaire")[0].style.height = "auto"
+        e.getElementsByClassName("txtSavoirFaire")[0].style.fontSize = "medium";
     }
 }
 
