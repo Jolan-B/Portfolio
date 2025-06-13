@@ -362,6 +362,10 @@ iframe {
     gap: 5px;
 }
 
+.txtLien:hover {
+    color: var(--green);
+}
+
 .codeAbreuvetoa {
     font-size: 14px;
 }
@@ -386,6 +390,11 @@ iframe {
 
 .image_txt:nth-child(2n) {
     flex-direction: row-reverse;
+}
+
+.image_txt img {
+    width: calc(45vw - 20px);
+    object-fit: contain;
 }
 
 .txtProjet {
