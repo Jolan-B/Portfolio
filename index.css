@@ -355,7 +355,7 @@ iframe {
     align-items: center;
 }
 
-.siteAbreuvetoa {
+.accesSite {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -366,7 +366,7 @@ iframe {
     color: var(--green);
 }
 
-.codeAbreuvetoa {
+.infosAcces {
     font-size: 14px;
 }
 
