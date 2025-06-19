@@ -40,6 +40,7 @@ body {
 a {
     color: var(--black);
     text-decoration: none;
+    background-color: red;
 }
 
 .italic {
