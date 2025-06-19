@@ -10,6 +10,10 @@ function page(e) {
     window.location.href = e
 }
 
+function otherPage(e) {
+    window.open(e)
+}
+
 // PAGE ACCUEIL
 
 function afficheCV() {
@@ -96,6 +100,7 @@ function zoom(e) {
         e.style.overflowY = "hidden"
         e.getElementsByClassName("illustrationSavoirFaire")[0].style.height = "170px"
         e.getElementsByClassName("txtSavoirFaire")[0].style.fontSize = "0";
+        e.style.cursor = "pointer";
     }
     else {
         e.style.width = "100%"
@@ -104,6 +109,7 @@ function zoom(e) {
         e.style.overflowY = "auto"
         e.getElementsByClassName("illustrationSavoirFaire")[0].style.height = "auto"
         e.getElementsByClassName("txtSavoirFaire")[0].style.fontSize = "medium";
+        e.style.cursor = "auto";
     }
 }
 
