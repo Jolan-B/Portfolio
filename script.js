@@ -92,21 +92,25 @@ function changePageProjet(e) {
 
 // PAGE SAVOIR FAIRE 
 
+const minWidth = 900;
+
 function changeZoom() {
 
     const blocks = document.getElementsByClassName("block");
-    var width = window.innerWidth;
+    const width = window.innerWidth;
+
+    console.log(width)
 
     for (const e of blocks) {
         let elemWidth = e.style.width;
         if (elemWidth == "100%") {
-            if (width < 1100) {
+            if (width < minWidth) {
                 e.getElementsByClassName("detail")[0].style.display = "block"
                 e.getElementsByClassName("detail")[0].style.flexDirection = "column"
                 e.getElementsByClassName("illustrationSavoirFaire")[0].style.width = "92%"
                 e.getElementsByClassName("illustrationSavoirFaire")[0].style.objectFit = "cover"
             }
-            else if (width > 1100) {
+            else if (width > minWidth) {
                 e.getElementsByClassName("detail")[0].style.display = "flex"
                 e.getElementsByClassName("detail")[0].style.flexDirection = "row"
                 e.getElementsByClassName("illustrationSavoirFaire")[0].style.width = "50%"
@@ -144,7 +148,7 @@ function zoom(e) {
         e.style.overflowY = "auto"
         e.style.cursor = "auto";
 
-        if (width > 1100) {
+        if (width > minWidth) {
             e.getElementsByClassName("detail")[0].style.display = "flex"
             e.getElementsByClassName("detail")[0].style.flexDirection = "row"
             e.getElementsByClassName("illustrationSavoirFaire")[0].style.width = "50%"
