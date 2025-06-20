@@ -92,7 +92,36 @@ function changePageProjet(e) {
 
 // PAGE SAVOIR FAIRE 
 
+function changeZoom() {
+
+    const blocks = document.getElementsByClassName("block");
+    var width = window.innerWidth;
+
+    for (const e of blocks) {
+        let elemWidth = e.style.width;
+        if (elemWidth == "100%") {
+            if (width < 1100) {
+                e.getElementsByClassName("detail")[0].style.display = "block"
+                e.getElementsByClassName("detail")[0].style.flexDirection = "column"
+                e.getElementsByClassName("illustrationSavoirFaire")[0].style.width = "92%"
+                e.getElementsByClassName("illustrationSavoirFaire")[0].style.objectFit = "cover"
+            }
+            else if (width > 1100) {
+                e.getElementsByClassName("detail")[0].style.display = "flex"
+                e.getElementsByClassName("detail")[0].style.flexDirection = "row"
+                e.getElementsByClassName("illustrationSavoirFaire")[0].style.width = "50%"
+                e.getElementsByClassName("illustrationSavoirFaire")[0].style.objectFit = "contain"
+            }
+        }
+
+    }
+}
+
+window.onresize = changeZoom;
+
 function zoom(e) {
+
+    var width = window.innerWidth;
 
     if (e.style.width == "100%") {
         e.style.width = "250px"
@@ -101,15 +130,30 @@ function zoom(e) {
         e.getElementsByClassName("illustrationSavoirFaire")[0].style.height = "170px"
         e.getElementsByClassName("txtSavoirFaire")[0].style.fontSize = "0";
         e.style.cursor = "pointer";
+
+        e.getElementsByClassName("illustrationSavoirFaire")[0].style.objectFit = "cover"
+        e.getElementsByClassName("illustrationSavoirFaire")[0].style.width = "92%"
+        e.getElementsByClassName("detail")[0].style.display = "block"
+        e.getElementsByClassName("detail")[0].style.flexDirection = "column"
     }
     else {
         e.style.width = "100%"
-        e.style.height = "40%"
+        e.style.height = "480px"
         e.style.opacity = "1"
-        e.style.overflowY = "auto"
-        e.getElementsByClassName("illustrationSavoirFaire")[0].style.height = "auto"
         e.getElementsByClassName("txtSavoirFaire")[0].style.fontSize = "medium";
+        e.style.overflowY = "auto"
         e.style.cursor = "auto";
+
+        if (width > 1100) {
+            e.getElementsByClassName("detail")[0].style.display = "flex"
+            e.getElementsByClassName("detail")[0].style.flexDirection = "row"
+            e.getElementsByClassName("illustrationSavoirFaire")[0].style.width = "50%"
+            e.getElementsByClassName("illustrationSavoirFaire")[0].style.objectFit = "contain"
+
+        }
+
+        e.getElementsByClassName("illustrationSavoirFaire")[0].style.height = "auto"
+
     }
 }
 
