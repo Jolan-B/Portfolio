@@ -14,6 +14,7 @@
 
     <header>
         <section class="menu">
+
             <div class="regroupe Savoir">
                 <div class="primaire pointer">
                     <span class="hidden">Savoirs</span>
@@ -25,17 +26,14 @@
                     <span class="hidden">Savoir-faire</span>
                 </div>
             </div>
-            <!-- <div class="regroupe Competence">
-                <div class="primaire pointer grow">
-                    <span class="competence hidden">Compétences</span>
-                </div>
-            </div> -->
+
             <div class="regroupe" id="Projet">
                 <div class="primaire pointer grow" id="projet" onclick="changePageProjet(this)"
                     onmouseenter="deplace(this)">
                     <span id="spanProjet" class="hidden">Projets</span>
                 </div>
             </div>
+
             <div class="regroupe CV">
                 <div class="primaire pointer grow" onclick="afficheCV()">
                     <span class="cv hidden">CV</span>
@@ -44,7 +42,7 @@
         </section>
 
         <div id="cv" class="cache">
-            <object id="cvPdf" data="CV.pdf?#zoom=75"></object>
+            <object id="cvPdf" data="CV.pdf?#zoom=90"></object>
 
             <div id="retourCV" class="suppr pointer" onclick="cacheCV(this)">
                 <span id="spanRetourCV">Retour</span>

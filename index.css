@@ -503,8 +503,9 @@ iframe {
     background-color: var(--green3);
 }
 
-.block:last-child {
+.detail {
     margin-bottom: 50px;
+    align-items: center;
 }
 
 .titre {
