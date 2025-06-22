@@ -29,6 +29,21 @@ body {
     --radius: 20px;
     --radius2: 13px;
 
+    /*TIME*/
+    --time1: 0.1s;
+    --time2: 0.2s;
+    --time3: 0.3s;
+    --time4: 0.4s;
+    --time5: 0.5s;
+    --time6: 0.6s;
+    --time7: 0.7s;
+    --time8: 0.8s;
+    --time9: 0.9s;
+    --time10: 1s;
+    --time15: 1.5s;
+    --time20: 2s;
+    --time30: 3s;
+
     display: flex;
     align-items: center;
     /* background-color: var(--grey1);
@@ -51,7 +66,7 @@ a {
 }
 
 .grow:hover {
-    transition: transform 0.3s;
+    transition: transform var(--time3);
     transform: scale(1.05);
 }
 
@@ -86,6 +101,8 @@ a {
     background-position: center;
     background-attachment: fixed;
     /* background: linear-gradient(180deg, var(--grey1), var(--grey2)); */
+
+    overflow: hidden;
 }
 
 header {
@@ -94,6 +111,25 @@ header {
     border: solid 5px var(--brown);
     border-radius: var(--radius);
     margin-left: 10%;
+
+    animation-duration: var(--time8);
+    animation-name: header;
+}
+
+@keyframes header {
+    from {
+        width: 100%;
+        height: 80%;
+
+        margin-left: 0;
+    }
+
+    to {
+        width: 80%;
+        height: 40%;
+
+        margin-left: 10%;
+    }
 }
 
 .menu {
@@ -143,9 +179,26 @@ header {
 
 .primaire:hover {
     span {
-        transition: 0.2s;
+        transition: var(--time2);
         color: var(--black);
         background-color: var(--white);
+    }
+}
+
+.Savoir {
+    animation-fill-mode: backwards;
+    animation-delay: var(--time8);
+    animation-duration: var(--time8);
+    animation-name: boutonSavoirs;
+}
+
+@keyframes boutonSavoirs {
+    from {
+        margin-left: -50vw;
+    }
+
+    to {
+        margin-left: 0;
     }
 }
 
@@ -159,11 +212,30 @@ header {
 .secondaire:hover {
 
     span {
-        transition: 0.2s;
+        transition: var(--time2);
         color: var(--black);
         background-color: var(--white);
     }
 
+}
+
+#Projet {
+    animation-fill-mode: backwards;
+    animation-delay: var(--time8);
+    animation-duration: var(--time8);
+    animation-name: boutonProjets;
+}
+
+@keyframes boutonProjets {
+    from {
+        margin-left: 50vw;
+        margin-top: calc(-120vh);
+        transform: rotate(180deg);
+    }
+
+    to {
+        margin-top: 0;
+    }
 }
 
 .cv {
@@ -178,8 +250,37 @@ header {
             0 100%,
             0 50%);
 
-    transition: clip-path 0.5s;
+    transition: clip-path var(--time5);
 }
+
+.CV>.primaire span {
+    animation-fill-mode: backwards;
+    animation-delay: var(--time8);
+    animation-duration: var(--time8);
+    animation-name: boutonCV;
+}
+
+@keyframes boutonCV {
+    from {
+        margin-left: 50vw;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+/* @keyframes boutonCV {
+    from {
+        background-color: transparent;
+        color: transparent;
+    }
+
+    to {
+        background-color: var(--brown);
+        color: var(white);
+    }
+} */
 
 .CV:hover {
 
@@ -214,7 +315,7 @@ header {
 
 .regroupe.Savoir:hover {
 
-    transition: 0.2s;
+    transition: var(--time2);
     height: var(--span_height2);
     background-color: var(--brown);
 
@@ -224,7 +325,7 @@ header {
     }
 
     .secondaire {
-        transition: 0.3s;
+        transition: var(--time3);
         height: var(--secondaire_height);
         width: 100%;
         font-size: var(--secondaire_font_size);
@@ -232,7 +333,7 @@ header {
 }
 
 #cv {
-    transition-duration: 0.6s;
+    transition-duration: var(--time6);
 }
 
 #cvPdf {
@@ -250,7 +351,7 @@ header {
     border-radius: 10px;
 
     align-content: center;
-    transition-delay: 1s;
+    transition-delay: var(--time10);
 
 }
 
@@ -291,7 +392,7 @@ header {
     object-fit: cover;
     opacity: 0.85;
 
-    animation-duration: 0.7s;
+    animation-duration: var(--time7);
     animation-name: appearProjet;
 }
 
@@ -308,7 +409,7 @@ header {
 }
 
 .projet>img:hover {
-    transition: 0.3s;
+    transition: var(--time3);
     opacity: 1;
 }
 
@@ -350,6 +451,18 @@ header {
 
     position: fixed;
 
+    animation-duration: var(--time15);
+    animation-name: boutons;
+}
+
+@keyframes boutons {
+    from {
+        margin-top: -48px;
+    }
+
+    to {
+        margin-top: 0;
+    }
 }
 
 iframe {
@@ -376,6 +489,24 @@ iframe {
     display: flex;
     flex-direction: column;
     gap: 5px;
+
+    animation-duration: var(--time20);
+    animation-name: appearAccesSite;
+}
+
+.accesSite a {
+    animation-duration: var(--time20);
+    animation-name: appearAccesSite;
+}
+
+@keyframes appearAccesSite {
+    from {
+        color: white;
+    }
+
+    to {
+        color: black;
+    }
 }
 
 .txtLien:hover {
@@ -407,12 +538,12 @@ iframe {
 .image_txt:nth-child(2n) {
     flex-direction: row-reverse;
 
-    animation-duration: 1.5s;
+    animation-duration: var(--time15);
     animation-name: slideInByRight;
 }
 
 .image_txt:nth-child(2n+1) {
-    animation-duration: 1.5s;
+    animation-duration: var(--time15);
     animation-name: slideInByLeft;
 }
 
@@ -493,6 +624,19 @@ iframe {
     flex-direction: row;
     justify-content: space-between;
     width: 95%;
+
+    animation-duration: var(--time10);
+    animation-name: appearSavoirFaire;
+}
+
+@keyframes appearSavoirFaire {
+    from {
+        margin-bottom: 90vh;
+    }
+
+    to {
+        margin-bottom: 0;
+    }
 }
 
 .competences p {
@@ -508,34 +652,34 @@ iframe {
 }
 
 #competence1 {
-    animation-duration: 2s;
+    animation-duration: var(--time30);
     animation-name: competence1;
 }
 
 #competence2 {
-    animation-duration: 2s;
+    animation-duration: var(--time30);
     animation-name: competence2;
 }
 
 @keyframes competence1 {
     from {
         position: relative;
-        right: 20%;
+        right: 50%;
     }
 
     to {
-        right: -20%;
+        right: -50%;
     }
 }
 
 @keyframes competence2 {
     from {
         position: relative;
-        left: 20%;
+        left: 50%;
     }
 
     to {
-        left: -20%;
+        left: -50%;
     }
 }
 
@@ -555,19 +699,6 @@ iframe {
     justify-content: space-evenly;
 
     gap: 35px;
-
-    animation-duration: 1s;
-    animation-name: appearSavoirFaire;
-}
-
-@keyframes appearSavoirFaire {
-    from {
-        gap: 0;
-    }
-
-    to {
-        gap: 35px;
-    }
 }
 
 .block {
@@ -577,8 +708,8 @@ iframe {
     max-width: 100%;
     overflow-x: hidden;
 
-    transition: height 0.5s,
-        width 0.5s;
+    transition: height var(--time5),
+        width var(--time5);
 }
 
 .block:nth-child(3n+1) {
