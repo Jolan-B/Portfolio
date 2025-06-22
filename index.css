@@ -771,30 +771,64 @@ iframe {
     flex-direction: column;
 
     color: var(--white);
+
+    animation-fill-mode: backwards;
+    animation-delay: var(--time10);
+    animation-name: noOverflow;
+}
+
+@keyframes noOverflow {
+    from {
+        overflow: hidden;
+    }
+
+    to {
+        overflow: auto;
+    }
 }
 
 .txtSavoirEtre {
     width: 60vw;
     margin-top: 20vh;
+}
 
-    >p {
-        background-color: var(--green3);
-        color: var(--black);
-        padding: 20px;
+.txtSavoirEtre span {
+
+    background-color: var(--green3);
+    color: var(--black);
+    padding: 20px;
+
+    animation-duration: var(--time10);
+    animation-name: appearTxtSavoirEtre;
+}
+
+@keyframes appearTxtSavoirEtre {
+    from {
+        background-color: transparent;
+        color: transparent;
     }
 }
 
-.listeSavoirFaire {
+.listeSavoirEtre {
     width: 100%;
     font-weight: bold;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
+    animation-duration: var(--time10);
+    animation-name: appearListeSavoirEtre;
+
     div {
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+}
+
+@keyframes appearListeSavoirEtre {
+    from {
+        padding-top: 70vh;
     }
 }
 
