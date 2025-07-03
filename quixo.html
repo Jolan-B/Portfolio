@@ -32,17 +32,25 @@
             <img src="image/quixo.jpg" />
             <div class="txtProjet">
                 <span>
-                    Ce projet étudiant de groupe a pour objectif de programmer le jeu <b>Quixo</b> en modèle <b>MVC</b>
-                    (modèle qui
-                    partitionne le <i>Modèle</i>, la <i>Vue</i> et le <i>Contrôle</i> du jeu) en <b>Java</b>. Le Quixo
-                    est un jeu en 1 contre 1 sur un plateau de 5x5 où 25 cubes sont posés sur la face <i>Neutre</i>. Les
-                    joueurs ont une marque différente, l’un a les <i>X</i> et l’autre les <i>O</i>. Les joueurs
-                    jouent chacun leur tour et l’objectif est d’aligner 5 cubes de sa face avant l’autre. Lors d’un
-                    tour, le joueur choisit un cube en périphérie du plateau possédant la marque <i>Neutre</i> ou la
-                    sienne. Une fois sélectionné, il enlève le cube, ce qui crée un trou qu’il doit reboucher en le
-                    posant
-                    à un autre endroit en périphérie et en poussant les autres cubes. Si les deux joueurs alignent,
-                    suite au même coup, 5 de leurs faces respectives, c’est le joueur qui a joué le coup qui perd.
+                    <p>
+                        Ce projet étudiant de groupe a pour objectif de programmer le jeu <b>Quixo</b> en modèle
+                        <b>MVC</b>
+                        (modèle qui partitionne le <i>Modèle</i>, la <i>Vue</i> et le <i>Contrôle</i> du jeu) en
+                        <b>Java</b>.
+                    </p>
+                    <p> Le Quixo est un jeu en 1 contre 1 sur un plateau de 5x5 où 25 cubes sont posés sur la
+                        face <i>Neutre</i>. Les joueurs ont une marque différente, l’un a les <i>X</i> et l’autre les
+                        <i>O</i>. Les joueurs jouent chacun leur tour et l’objectif est d’aligner 5 cubes de sa face
+                        avant
+                        l’autre. Lors d’un tour, le joueur choisit un cube en périphérie du plateau possédant la marque
+                        <i>Neutre</i> ou la sienne. Une fois sélectionné, il enlève le cube, ce qui crée un trou qu’il
+                        doit
+                        reboucher en le posant à un autre endroit en périphérie et en poussant les autres cubes. Si les
+                        deux
+                        joueurs alignent, suite au même coup, 5 de leurs faces respectives, c’est le joueur qui a joué
+                        le
+                        coup qui perd.
+                    </p>
                 </span>
             </div>
         </div>
@@ -54,7 +62,8 @@
                     Lorsque le jeu est lancé, le joueur choisit son mode (<i>Joueur vs Joueur</i>, <i>Joueur vs
                         Ordinateur</i> ou <i>Ordinateur vs Ordinateur</i>).
                     Nous avons implémenté deux ordinateurs de difficultés différentes qu’il est possible d’affronter. Si
-                    au moins un joueur est présent, il inscrit son nom et le jeu démarre.
+                    au moins un joueur est présent, il inscrit son nom et peut ensuite démarrer le jeu en appuyant sur
+                    le bouton <i>Start Game</i>.
                 </span>
             </div>
         </div>
@@ -63,10 +72,24 @@
             <img src="image/projet/quixo2.png" />
             <div class="txtProjet">
                 <span>
-                    Comme dit précédemment, la première phase de jeu demande au joueur de sélectionner un cube en
-                    périphérie valable (de sa marque ou sans marque). Ensuite, le jeu affiche les coordonnées jouables
-                    pour la seconde phase en les surlignant en vert (comme illustré sur l’image). Une fois qu’une case
-                    valable est choisie, le jeu est mis à jour et c’est au tour du joueur suivant.
+                    <p>
+                        Comme dit précédemment, la première phase de jeu demande au joueur (dont le nom est donné en
+                        haut à
+                        gauche) de sélectionner un cube en périphérie valable (de sa marque ou neutre). Les dés jouables
+                        sont de colorés en vert.
+                    </p>
+                    <p>
+                        Lorsque le joueur effectue un clic gauche sur un cube jouable, le jeu colorie ce cube en bleu
+                        foncé
+                        et lui montre les coordonnées où le joueur peut le replacé lors de la seconde phase de jeu (ces
+                        emplacement sont bleu clair). Sur l'illustration, tous les dés sont neutres car il s'agit du
+                        premier
+                        tour. La joueuse <i>Maëlys</i> a fait un clic gauche sur le cube de coordonnées <i>E2</i>.
+                    </p>
+                    <p>
+                        Une fois que le joueur a choisi un cube à jouer, il le selectionne en faisant un clic droit
+                        dessus et la deuxième phase de son tour commence.
+                    </p>
                 </span>
             </div>
         </div>
@@ -75,10 +98,49 @@
             <img src="image/projet/quixo3.png" />
             <div class="txtProjet">
                 <span>
-                    Lorsqu’un des joueurs a aligné 5 dés de sa marque, le jeu s’arrête et désigne le vainqueur. Une
-                    deuxième partie est en cours de développement avec pour objectif de faire fonctionner ce jeu non pas
-                    dans un terminal avec des saisies clavier, mais avec une fenêtre graphique et des clics en guise
-                    de commandes.
+                    <p>
+                        Ensuite, le jeu affiche les coordonnées jouables pour la seconde phase en les colorant en vert.
+                    </p>
+                    <p>
+                        Une
+                        fois qu’une case valable est choisie, en effectuant un simple clic dessus, une animation se
+                        lance.
+                        Le cube selectionné lors de la première phase est alors déplacé aux coordonnées choisies à
+                        l'instant.
+                        Si ce cube portait une marque neutre, il est maintenant marqué avec celle du joueur
+                        actuel.
+                        Les autres cubes sont ensuite déplacées pour combler le trou.
+                    </p>
+                    <p>
+                        Ici, la joueurse a selectionné le même cube que celui de la figure précédente. Les coordonnées
+                        jouables en
+                        vertes sont celles qui étaient en bleu clair lors de la denière phase. Si la joueuse selectionne
+                        le cube de coordonnées <i>A2</i>, le cube précédement selectionné est alors déplacé sur ces
+                        coordonnées et les cubes de la ligne 2 sont alors tous décalé d'une case vers la droite pour
+                        qu'il n'y qi plus le trou en <i>E2</i>.
+                    </p>
+                    <p>
+                        Le tour est alors terminé et c'est au joueur suivant de jouer.
+                    </p>
+                </span>
+            </div>
+        </div>
+
+        <div class="image_txt">
+            <img src="image/projet/quixo4.png" />
+            <div class="txtProjet">
+                <span>
+                    <p>
+                        Lorsqu’un alignement de 5 mêmes marques d'un joueur a lieu, le jeu s’arrête.
+                    </p>
+                    <p>
+                        L'alignement est mis en évidence en colorant les cubes qui le constitue. Un message apparait et
+                        désigne le joueur vainqueur.
+                    </p>
+                    <p>
+                        On peut ensuite fermer le jeu en cliquant sur <i>Quit</i> ou refaire une partie à l'aide du
+                        bouton <i>New Game</i>. Dans ce second cas, c'est l'écran d'acceuil du jeu qui réapparait.
+                    </p>
                 </span>
             </div>
         </div>

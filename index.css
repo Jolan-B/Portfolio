@@ -568,12 +568,12 @@ iframe {
 }
 
 .image_txt img {
-    width: calc(45vw - 20px);
+    width: calc(50% - 10px);
     object-fit: contain;
 }
 
 .txtProjet {
-    width: calc(45vw - 20px);
+    width: calc(50% - 10px);
     color: var(--white);
     display: flex;
     flex-direction: column;
